@@ -387,54 +387,6 @@
             </div>
         </div>
         
-        <button class="add-image-btn" id="addImageBtn">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-            </svg>
-            Adicionar Nova Imagem a esta Subcategoria
-        </button>
-        
-        <h2 class="section-title">Imagens Adicionais</h2>
-        
-        <div class="carousel" id="additionalCarousel">
-            <div class="carousel-inner" id="additionalCarouselInner">
-                <!-- Itens do carrossel adicional serão inseridos dinamicamente -->
-            </div>
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn" id="additionalPrevBtn">Anterior</button>
-                <button class="carousel-btn next-btn" id="additionalNextBtn">Próximo</button>
-            </div>
-            <div class="carousel-indicators" id="additionalIndicators">
-                <!-- Indicadores serão inseridos dinamicamente -->
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal" id="infoModal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <div class="inset-info">
-                <!-- Informações do inseto serão inseridas dinamicamente -->
-            </div>
-        </div>
-    </div>
-    
-    <div class="modal" id="addImageModal">
-        <div class="modal-content">
-            <span class="close-btn" id="closeAddModal">&times;</span>
-            <h2>Adicionar Nova Imagem</h2>
-            <div class="inset-info">
-                <p>Funcionalidade para adicionar novas imagens à subcategoria atual.</p>
-                <p>Em uma implementação real, aqui teríamos:</p>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Upload de arquivo de imagem</li>
-                    <li>Formulário para informações da espécie</li>
-                    <li>Seleção de categoria e subcategoria</li>
-                    <li>Campos para autor, data, localização, etc.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     
     <footer>
         <p>Galeria GEAG &copy; 2023 - Todos os direitos reservados</p>
@@ -919,28 +871,7 @@
                        
                     ]
                 },
-                additional: [
-                    {
-                        id: 100,
-                        image: "injurias/adicionais/inseto1.jpg",
-                        species: "Inseto Adicional 1",
-                        injury: "Dano geral",
-                        author: "GEAG",
-                        date: "01/01/2023",
-                        location: "Vários locais",
-                        description: "Imagem adicional para demonstração da funcionalidade."
-                    },
-                    {
-                        id: 101,
-                        image: "injurias/adicionais/inseto2.jpg",
-                        species: "Inseto Adicional 2",
-                        injury: "Dano geral",
-                        author: "GEAG",
-                        date: "01/01/2023",
-                        location: "Vários locais",
-                        description: "Imagem adicional para demonstração da funcionalidade."
-                    }
-                ]
+                
             },
             coleopteros: {
                 subcategories: {
@@ -1466,6 +1397,7 @@ function downloadImage(imageUrl, species, event) {
 </body>
 
 </html>
+
 
 
 
